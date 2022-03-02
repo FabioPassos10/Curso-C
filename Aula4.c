@@ -8,19 +8,28 @@ int contador=0;
 
 void main(int argc, char *argv[]){
 
-setlocale(LC_ALL,"portuguese");//Função para permitir os acentos
+setlocale(LC_ALL,"portuguese");//FunÃ§Ã£o para permitir os acentos
 printf("     |--------------------------------------------------|  \n \n");
 printf("     |                    Tabuada                       |   \n \n");
 printf("     |--------------------------------------------------|  \n \n");
 system("pause");
-printf("\n Digite o número da Tabuada: ");
+system("cls");
+
+printf("\n Digite o nÃºmero da Tabuada: ");
 scanf("%d", &numero);
 
-for(contador=0; contador<=10; contador++){//Laço de repetição
+system("pause");
+printf("     |--------------------------------------------------|  \n \n");
+printf("     |                    Tabuada do %d                 |   \n \n", numero);
+printf("     |--------------------------------------------------|  \n \n");
 
-    printf("%d x %d = %d\n ",numero,contador, numero*contador);
+
+for(contador= 0; contador<=10; contador++){//LaÃ§o de repetiÃ§Ã£o
+
+    printf("%d x %d = %d\n",numero,contador, numero*contador);
 
 }
 
 
 }
+
